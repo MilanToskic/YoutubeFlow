@@ -25,7 +25,7 @@ public class MainClassYTFlow {
     public static void ytubeVideo() {
 
         WebElement videoName = driver.findElement(By.xpath("/html/body/ytd-app/div[1]/div/ytd-masthead/div[4]/div[2]/ytd-searchbox/form/div[1]/div[1]/input"));
-        videoName.sendKeys("Dwight Schrute - Pretty Woman");
+        videoName.sendKeys("Dwight Schrute is Pretty Woman");
 
         WebElement searchButton = driver.findElement(By.xpath("/html/body/ytd-app/div[1]/div/ytd-masthead/div[4]/div[2]/ytd-searchbox/button"));
         searchButton.click();
@@ -36,7 +36,7 @@ public class MainClassYTFlow {
             e.printStackTrace();
         }
 
-        WebElement videoClick = driver.findElement(By.xpath("/html/body/ytd-app/div[1]/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[2]/div[1]/ytd-thumbnail/a/yt-image/img"));
+        WebElement videoClick = driver.findElement(By.xpath("/html/body/ytd-app/div[1]/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]/ytd-thumbnail/a/yt-image/img"));
         videoClick.click();
 
         WebElement captionsClick = driver.findElement(By.xpath("/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div[2]/div/div/ytd-player/div/div/div[28]/div[2]/div[2]/button[2]"));
